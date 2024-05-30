@@ -5,10 +5,12 @@ import AlertInfo from "./TurasComponents/Alerts/AlertInfo";
 import AlertWarning from "./TurasComponents/Alerts/AlertWarning";
 import AlertDanger from "./TurasComponents/Alerts/AlertDanger";
 import LoremIpsum from "./TurasComponents/Utiliites/LoremIpsum";
+import Layout from "./TurasLayout/Layout";
 
 function App() {
   return (
     <>
+     <Layout>
       <h2>Alerts</h2>
       <AlertInfo
         alertTitle={"Alert Info Title"}
@@ -51,6 +53,7 @@ function App() {
       <Card cardHeading="My title" cardLink="/">
         <LoremIpsum />
       </Card>
+      </Layout>
     </>
   );
 }
