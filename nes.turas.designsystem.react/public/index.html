@@ -1,43 +1,439 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+    <title>TDS tEST</title>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+            <link rel="apple-touch-icon" sizes="120x120" href="https://www.turasdesignsystem.nhs.scot/lib/turas-design-system/dist/img/apple-touch-icon.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="https://www.turasdesignsystem.nhs.scot/lib/turas-design-system/dist/img/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="https://www.turasdesignsystem.nhs.scot/lib/turas-design-system/dist/img/favicon-16x16.png">
+            <meta name="msapplication-TileColor" content="#2b5797">
+            <meta name="theme-color" content="#ffffff">
+            
+            <script crossorigin="anonymous" src="https://kit.fontawesome.com/c99fef56ca.js"></script>
+<script>(window.FontAwesomeKitConfig||document.write("\u003Cscript crossorigin=\u0022anonymous\u0022 src=\u0022/lib/font-awesome-kit/font-awesome-kit.js?v=oAg2lbTPZGM6FpP9OO-cN0FNmDD3vAs_0zztSkq4lLo\u0022\u003E\u003C/script\u003E"));</script>
+<link rel="stylesheet" href="https://www.turasdesignsystem.nhs.scot/lib/select2/dist/css/select2.min.css?v=SnZBxsWDBioGjBVDiSKmq1CH2oR9UdGLNpKbAT8QZnE">
+<link rel="stylesheet" href="https://www.turasdesignsystem.nhs.scot/lib/datatables.net-bs5/css/dataTables.bootstrap5.min.css?v=ufAgacFSCIc95qItAh42Y0u-oTfe0TODRKTPJ_yArlE">
+<link rel="stylesheet" href="https://www.turasdesignsystem.nhs.scot/lib/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css?v=s2PDa4sJgUQIBwK9PQvoQTgo3i6tIpKM_tvdo1vh8aI">
+<link rel="stylesheet" href="https://www.turasdesignsystem.nhs.scot/lib/turas-design-system/dist/css/turas-design-system.min.css?v=Sx8PZSowp7pJ_mIvlXgHizvs7yLZqA19_dbpoj1GeHw">
+
+        
+    <script src="https://www.turasdesignsystem.nhs.scot/lib/jquery/dist/jquery.min.js?v=ZGvpTYxTCVHQCchVMjFZKwmOhwjahvvxMBnN5VAUh0I"></script>
+<script src="https://www.turasdesignsystem.nhs.scot/lib/bootstrap/dist/js/bootstrap.bundle.min.js?v=RIIp-d6RhFDpPAxTdGO_skjFbNZM0Axu-v3uBxhe1sI"></script>
+<script src="https://www.turasdesignsystem.nhs.scot/lib/datatables.net/js/jquery.dataTables.min.js?v=5yqUzEoYWjfVqoIk-pZ-PnO5gjMgfuBJEFZM3nrewU0"></script>
+<script src="https://www.turasdesignsystem.nhs.scot/lib/datatables.net-bs5/js/dataTables.bootstrap5.min.js?v=1N7a4W-9y_x41M_dcJWdPd6d8_PPeNBJQkyt5JNZORs"></script>
+<script src="https://www.turasdesignsystem.nhs.scot/lib/select2/dist/js/select2.min.js?v=K3ojeTak4bWOP8RslHWjWuS5X5-99MIcFNVtrBM7bc0"></script>
+<script src="https://www.turasdesignsystem.nhs.scot/lib/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js?v=M_PZyW5_Ab2w-Y07cg2tXdt9qu0ZVKEZ2WaFafoncT0"></script>
+<script src="https://www.turasdesignsystem.nhs.scot/lib/turas-design-system/dist/js/turas-design-system.min.js?v=KLwoGN5qqiunXUHeW3kSVnEi0sa3mLOHOTKVUBYARfE"></script>
+
+</head>
+
+
+
+<body class="">
+  
+
+    <a class="visually-hidden-focusable" id="skipcontent" href="#maincontent">Skip to main content</a>
+
+    <div class="wrapper">
+        
+<nav id="universal-nav">
+    <div class="container">
+
+        <a class="navbar-brand" href="/">
+            <img src="https://www.turasdesignsystem.nhs.scot/img/logos/TurasLogoBlue.png" alt="" class="img-fluid" />
+
+            <p>Design System</p>
+        </a>
+
+
+    </div> <!-- /.container -->
+</nav>
+
+        <nav id="main-nav" class="navbar navbar-expand-xl navbar-dark bg-dark ">
+<div class="container">
+    <!-- Collapse button -->
+    <span class="menu-text float-right">Menu</span>
+    <button class="navbar-toggler second-button float-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="animated-icon2"><span></span><span></span><span></span><span></span></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            
+        <li class="nav-item  active">
+            <a href="/" class="nav-link ">
+                Home
+            </a>
+        </li>
+
+            <li class="nav-item dropdown ">
+
+                <a href="/get-started/" class="nav-link dropdown-toggle " role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Get started
+                </a>
+
+                <div class="dropdown-menu " aria-labelledby="main-nav">
+                        <a href="/get-started/turas-fundamentals/" class="dropdown-item ">
+                            Turas fundamentals
+                        </a>
+                        <a href="/get-started/installation/" class="dropdown-item ">
+                            Installation
+                        </a>
+                        <a href="/get-started/browser-support/" class="dropdown-item ">
+                            Browser support
+                        </a>
+                        <a href="/get-started/responsive-grid/" class="dropdown-item ">
+                            Responsive grid
+                        </a>
+                        <a href="/get-started/homepage-templates/" class="dropdown-item ">
+                            Homepage templates
+                        </a>
+                        <a href="/get-started/section-page-template/" class="dropdown-item ">
+                            Section page template
+                        </a>
+                        <a href="/get-started/content-page-templates/" class="dropdown-item ">
+                            Content page templates
+                        </a>
+                </div>
+
+            </li>
+            <li class="nav-item dropdown ">
+
+                <a href="/accessibility/" class="nav-link dropdown-toggle " role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Accessibility
+                </a>
+
+                <div class="dropdown-menu " aria-labelledby="main-nav">
+                        <a href="/accessibility/inclusive-design/" class="dropdown-item ">
+                            Inclusive design
+                        </a>
+                        <a href="/accessibility/testing-for-accessibility/" class="dropdown-item ">
+                            Testing for accessibility
+                        </a>
+                        <a href="/accessibility/accessibility-audits/" class="dropdown-item ">
+                            Accessibility audits
+                        </a>
+                        <a href="/accessibility/accessibility-statements/" class="dropdown-item ">
+                            Accessibility statements
+                        </a>
+                        <a href="/accessibility/accessibility-roadmap/" class="dropdown-item ">
+                            Accessibility roadmap
+                        </a>
+                        <a href="/accessibility/accessible-documents/" class="dropdown-item ">
+                            Accessible documents
+                        </a>
+                        <a href="/accessibility/accessible-videos/" class="dropdown-item ">
+                            Accessible videos
+                        </a>
+                        <a href="/accessibility/flowchart-text-alternatives/" class="dropdown-item ">
+                            Flowchart text alternatives
+                        </a>
+                        <a href="/accessibility/get-in-touch/" class="dropdown-item ">
+                            Get in touch
+                        </a>
+                </div>
+
+            </li>
+            <li class="nav-item dropdown ">
+
+                <a href="/components/" class="nav-link dropdown-toggle " role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Components
+                </a>
+
+                <div class="dropdown-menu " aria-labelledby="main-nav">
+                        <a href="/components/overview/" class="dropdown-item ">
+                            Overview
+                        </a>
+                        <a href="/components/accordions/" class="dropdown-item ">
+                            Accordions
+                        </a>
+                        <a href="/components/alert-boxes/" class="dropdown-item ">
+                            Alert boxes
+                        </a>
+                        <a href="/components/back-to-top/" class="dropdown-item ">
+                            Back to top
+                        </a>
+                        <a href="/components/badges/" class="dropdown-item ">
+                            Badges
+                        </a>
+                        <a href="/components/blockquote/" class="dropdown-item ">
+                            Blockquote
+                        </a>
+                        <a href="/components/breadcrumbs/" class="dropdown-item ">
+                            Breadcrumbs
+                        </a>
+                        <a href="/components/buttons/" class="dropdown-item ">
+                            Buttons
+                        </a>
+                        <a href="/components/cards/" class="dropdown-item ">
+                            Cards
+                        </a>
+                        <a href="/components/footer/" class="dropdown-item ">
+                            Footer
+                        </a>
+                        <a href="/components/header-global/" class="dropdown-item ">
+                            Header (global)
+                        </a>
+                        <a href="/components/header-application/" class="dropdown-item ">
+                            Header (application)
+                        </a>
+                        <a href="/components/modals/" class="dropdown-item ">
+                            Modals
+                        </a>
+                        <a href="/components/navigation-application/" class="dropdown-item ">
+                            Navigation (application)
+                        </a>
+                        <a href="/components/navigation-section/" class="dropdown-item ">
+                            Navigation (section)
+                        </a>
+                        <a href="/components/skip-to-main-content/" class="dropdown-item ">
+                            Skip to main content
+                        </a>
+                        <a href="/components/status-labels/" class="dropdown-item ">
+                            Status labels
+                        </a>
+                        <a href="/components/switcher/" class="dropdown-item ">
+                            Switcher
+                        </a>
+                        <a href="/components/tables/" class="dropdown-item ">
+                            Tables
+                        </a>
+                        <a href="/components/tabs-content/" class="dropdown-item ">
+                            Tabs (content)
+                        </a>
+                        <a href="/components/tabs-page/" class="dropdown-item ">
+                            Tabs (page)
+                        </a>
+                </div>
+
+            </li>
+            <li class="nav-item dropdown ">
+
+                <a href="/forms/" class="nav-link dropdown-toggle " role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Forms
+                </a>
+
+                <div class="dropdown-menu " aria-labelledby="main-nav">
+                        <a href="/forms/overview/" class="dropdown-item ">
+                            Overview
+                        </a>
+                        <a href="/forms/form-structure/" class="dropdown-item ">
+                            Form structure
+                        </a>
+                        <a href="/forms/form-patterns/" class="dropdown-item ">
+                            Form patterns
+                        </a>
+                </div>
+
+            </li>
+            <li class="nav-item dropdown ">
+
+                <a href="/experience/" class="nav-link dropdown-toggle " role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Experience
+                </a>
+
+                <div class="dropdown-menu " aria-labelledby="main-nav">
+                        <a href="/experience/user-research/" class="dropdown-item ">
+                            User research
+                        </a>
+                        <a href="/experience/prototyping/" class="dropdown-item ">
+                            Prototyping
+                        </a>
+                        <a href="/experience/help-us-improve-turas/" class="dropdown-item ">
+                            Help us improve Turas
+                        </a>
+                        <a href="/experience/user-research-guidance/" class="dropdown-item ">
+                            User research guidance
+                        </a>
+                        <a href="/experience/research-ethics-guidance/" class="dropdown-item ">
+                            Research ethics guidance
+                        </a>
+                </div>
+
+            </li>
+            <li class="nav-item dropdown ">
+
+                <a href="/writing-content/" class="nav-link dropdown-toggle " role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Writing content
+                </a>
+
+                <div class="dropdown-menu " aria-labelledby="main-nav">
+                        <a href="/writing-content/overview/" class="dropdown-item ">
+                            Overview
+                        </a>
+                        <a href="/writing-content/content-structure/" class="dropdown-item ">
+                            Content structure
+                        </a>
+                        <a href="/writing-content/content-a-to-z/" class="dropdown-item ">
+                            Content A to Z
+                        </a>
+                        <a href="/writing-content/sentence-case/" class="dropdown-item ">
+                            Sentence case
+                        </a>
+                        <a href="/writing-content/best-practice-for-html-links/" class="dropdown-item ">
+                            Best practice for HTML links
+                        </a>
+                        <a href="/writing-content/referring-to-people/" class="dropdown-item ">
+                            Referring to people
+                        </a>
+                        <a href="/writing-content/search-engine-optimisation/" class="dropdown-item ">
+                            Search engine optimisation
+                        </a>
+                        <a href="/writing-content/words-to-avoid/" class="dropdown-item ">
+                            Words to avoid
+                        </a>
+                        <a href="/writing-content/writing-blogs/" class="dropdown-item ">
+                            Writing blogs
+                        </a>
+                        <a href="/writing-content/useful-resources/" class="dropdown-item ">
+                            Useful resources
+                        </a>
+                </div>
+
+            </li>
+            <li class="nav-item dropdown ">
+
+                <a href="/design/" class="nav-link dropdown-toggle " role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Design
+                </a>
+
+                <div class="dropdown-menu " aria-labelledby="main-nav">
+                        <a href="/design/turas-logo/" class="dropdown-item ">
+                            Turas logo
+                        </a>
+                        <a href="/design/typography/" class="dropdown-item ">
+                            Typography
+                        </a>
+                        <a href="/design/user-interface-colours/" class="dropdown-item ">
+                            User interface colours
+                        </a>
+                        <a href="/design/icons/" class="dropdown-item ">
+                            Icons
+                        </a>
+                        <a href="/design/application-graphics/" class="dropdown-item ">
+                            Application graphics
+                        </a>
+                        <a href="/design/illustration-style/" class="dropdown-item ">
+                            Illustration style
+                        </a>
+                </div>
+
+            </li>
+            <li class="nav-item  ">
+
+                <a href="/contact-us/" class="nav-link ">
+                    Contact us
+                </a>
+
+            </li>
+           
+        </ul>
+    </div>
+</div></nav>
+
+
+
+
+
+
+
+            
+
+
+            <div id="wideabovecontainer">
+                    
+    <div class="main-banner " id="sg-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 flexy-text">
+                        <div class="home-banner-text flexy-content">
+                            <h1 id="bannerPageTitle">REACT Demo app</h1>
+                            
+                            <p id="homeBannerText">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel.</p>
+                            
+                             <a href="/" class="btn btn-primary ">Find out more</a>
+    
+                        </div>
+                    </div>
+                    <div class="d-none d-lg-block col-lg-6 ">
+                        <img src="/media/vm3kvg3i/banner_image.png" class="img-fluid" alt="Turas Design System">
+                    </div>
+                    </div>
+            </div></div>
+
+            </div>
+
+        <div id="maincontent">
+
+            <section class="turasSection "><div class="container">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  </div> <!-- /.container -->
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <div id="footer">
+    <footer class="turas-ui-components-footer">
+        <div class="container">
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img class="turasLogo" src="/img/logos/TurasLogo.svg" alt="" />
+                        </div>
+
+                        <div class="col-md-9">
+                            <div class="taglineWrapper">
+                                <a href="https://www.nationaldigitalplatform.scot/" target="_blank">
+                                    <img src="https://www.turasdesignsystem.nhs.scot/img/logos/NDP-Icon.svg" alt="National Digital Platform logo" />
+                                    <p>Built using the National Digital Platform</p>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div> <!-- /.row -->
+
+                    <div class="row">
+                        <div class="footer-links col">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="/legal-and-site-information/accessibility/">Accessibility</a></li>
+                                <li><a href="/legal-and-site-information/privacy/">Privacy</a></li>
+                                <li><a href="/legal-and-site-information/terms-and-conditions/">Terms and Conditions</a></li>
+                                <li><a href="/legal-and-site-information/cookies/">Cookies</a></li>
+                            </ul>
+                        </div>
+                    </div> <!-- /.row -->
+
+        </div> <!-- /.container -->
+
+        <div class="subfooter">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col">
+                        <p>©2024 NHS Education for Scotland</p>
+
+                        <p>Version: 1.000000</p>
+                    </div>
+
+                </div>
+            </div>
+        </div> <!-- /.subfooter-->
+
+    </footer>
+
+
+<script src="https://www.turasdesignsystem.nhs.scot/lib/jquery-validation/dist/jquery.validate.js"></script>
+<script src="https://www.turasdesignsystem.nhs.scot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js"></script>
+
+
+<script src="https://www.turasdesignsystem.nhs.scot/lib/turas-design-system/dist/js/turas-design-system.init.min.js?v=eMtesZEws07XQRDlGtKRr2Beej69Usxy_qLQ_KF8mD8"></script>
+
+
+
+  
+  
+</script>
+</body>
 </html>
