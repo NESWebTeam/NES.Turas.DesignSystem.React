@@ -1,6 +1,6 @@
 import React from "react";
 
-const AlertSuccess = ({ alertTitle, alertMessage }) => {
+const AlertSuccess = ({ alertTitle, alertMessage, children }) => {
   return (
     <div class="alert alert-success" role="alert">
       <div class="alert-icon">
@@ -10,6 +10,7 @@ const AlertSuccess = ({ alertTitle, alertMessage }) => {
         <p class="mb-0">
           <strong>{alertTitle}</strong>
           {alertMessage}
+          {children}
         </p>
       </div>
     </div>

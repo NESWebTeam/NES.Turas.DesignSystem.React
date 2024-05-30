@@ -9,29 +9,42 @@ import LoremIpsum from "./TurasComponents/Utiliites/LoremIpsum";
 function App() {
   return (
     <>
-     
       <h2>Alerts</h2>
       <AlertInfo
         alertTitle={"Alert Info Title"}
         alertMessage={"This is the alert message"}
       >
-          <LoremIpsum />
+        <LoremIpsum />
       </AlertInfo>
+
+      <hr />
 
       <AlertSuccess
         alertTitle="Alert Success Title"
         alertMessage="This is the alert message"
-      />  
+      >
+        <LoremIpsum />
+      </AlertSuccess>
+
+      <hr />
 
       <AlertWarning
         alertTitle={"Alert Warning Title"}
         alertMessage={"This is the alert message"}
-      />
+      >
+        <LoremIpsum />
+      </AlertWarning>
+
+      <hr />
 
       <AlertDanger
         alertTitle={"Alert Danger Title"}
         alertMessage={"This is the alert message"}
-      />
+      >
+        <LoremIpsum />
+      </AlertDanger>
+
+      <hr />
 
       <h2>Cards</h2>
 
