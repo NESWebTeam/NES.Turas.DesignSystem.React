@@ -4,19 +4,24 @@ import AlertSuccess from "./TurasComponents/Alerts/AlertSuccess";
 import AlertInfo from "./TurasComponents/Alerts/AlertInfo";
 import AlertWarning from "./TurasComponents/Alerts/AlertWarning";
 import AlertDanger from "./TurasComponents/Alerts/AlertDanger";
+import LoremIpsum from "./TurasComponents/Utiliites/LoremIpsum";
 
 function App() {
   return (
     <>
-      <AlertSuccess
-        alertTitle="Alert Success Title"
-        alertMessage="This is the alert message"
-      />
-
+     
+      <h2>Alerts</h2>
       <AlertInfo
         alertTitle={"Alert Info Title"}
         alertMessage={"This is the alert message"}
-      />
+      >
+          <LoremIpsum />
+      </AlertInfo>
+
+      <AlertSuccess
+        alertTitle="Alert Success Title"
+        alertMessage="This is the alert message"
+      />  
 
       <AlertWarning
         alertTitle={"Alert Warning Title"}
@@ -28,7 +33,11 @@ function App() {
         alertMessage={"This is the alert message"}
       />
 
-      <Card cardHeading="My title" cardLink="/" />
+      <h2>Cards</h2>
+
+      <Card cardHeading="My title" cardLink="/">
+        <LoremIpsum />
+      </Card>
     </>
   );
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Card = ({cardHeading, cardLink}) => {
+const Card = ({cardHeading, cardLink, children}) => {
     return (
       <div class="col-md-6 col-lg-4  "><a href={cardLink}>
         <div class="card landingBlock h-100  ">
@@ -8,7 +8,7 @@ const Card = ({cardHeading, cardLink}) => {
             <h3 class="card-title">{cardHeading}</h3>
           </div>
           <div class="card-body d-flex flex-column">
-            <p>lorem</p>
+            {children}
           </div>
         </div>
       </a></div>
