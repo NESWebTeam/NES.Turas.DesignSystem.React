@@ -8,7 +8,7 @@ const AlertInfo = ({ alertTitle, alertMessage, children }) => {
       </div>
       <div class="alert-content">
         <p class="mb-0">
-          <strong>{alertTitle}</strong>
+          <strong>{alertTitle} </strong>
           {alertMessage}
           {children}
         </p>

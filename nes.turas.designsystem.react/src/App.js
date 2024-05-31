@@ -7,54 +7,54 @@ import AlertDanger from "./TurasComponents/Alerts/AlertDanger";
 import LoremIpsum from "./TurasComponents/Utiliites/LoremIpsum";
 import Layout from "./TurasLayout/Layout";
 
-
-
 function App() {
   return (
     <>
-     <Layout>
-      <h2>Alerts</h2>
-      <AlertInfo
-        alertTitle={"Alert Info Title"}
-        alertMessage={"This is the alert message"}
-      >
-        <LoremIpsum />
-      </AlertInfo>
+      <Layout>
+        <h2 className="mt-0">Alerts</h2>
+        <AlertInfo
+          alertTitle={"Alert Info Title"}
+          alertMessage={"This is the alert message"}
+        >
+          <LoremIpsum />
+        </AlertInfo>
 
-      <hr />
+        <AlertSuccess
+          alertTitle="Alert Success Title"
+          alertMessage="This is the alert message"
+        >
+          <LoremIpsum />
+        </AlertSuccess>
 
-      <AlertSuccess
-        alertTitle="Alert Success Title"
-        alertMessage="This is the alert message"
-      >
-        <LoremIpsum />
-      </AlertSuccess>
+        <AlertWarning
+          alertTitle={"Alert Warning Title"}
+          alertMessage={"This is the alert message"}
+        >
+          <LoremIpsum />
+        </AlertWarning>
 
-      <hr />
+        <AlertDanger
+          alertTitle={"Alert Danger Title"}
+          alertMessage={"This is the alert message"}
+        >
+          <LoremIpsum />
+        </AlertDanger>
 
-      <AlertWarning
-        alertTitle={"Alert Warning Title"}
-        alertMessage={"This is the alert message"}
-      >
-        <LoremIpsum />
-      </AlertWarning>
+        <h2>Cards</h2>
 
-      <hr />
+        <div className="row">
+          <Card cardHeading="My title" cardLink="/">
+            <LoremIpsum />
+          </Card>
 
-      <AlertDanger
-        alertTitle={"Alert Danger Title"}
-        alertMessage={"This is the alert message"}
-      >
-        <LoremIpsum />
-      </AlertDanger>
+          <Card cardHeading="My title" cardLink="/">
+            <LoremIpsum />
+          </Card>
 
-      <hr />
-
-      <h2>Cards</h2>
-
-      <Card cardHeading="My title" cardLink="/">
-        <LoremIpsum />
-      </Card>
+          <Card cardHeading="My title" cardLink="/">
+            <LoremIpsum />
+          </Card>
+        </div>
       </Layout>
     </>
   );
