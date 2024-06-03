@@ -2,16 +2,16 @@ import React from "react";
 
 const AlertWarning = ({ alertTitle, alertMessage, children }) => {
   return (
-    <div class="alert alert-warning " role="alert">
-      <div class="alert-icon">
-        <span class="fa-exclamation-triangle fa"></span>
+    <div className="alert alert-warning " role="alert">
+      <div className="alert-icon">
+        <span className="fa-exclamation-triangle fa"></span>
       </div>
-      <div class="alert-content">
-        <p class="mb-0">
+      <div className="alert-content">
+        <p className="mb-0">
           <strong>{alertTitle} </strong>
           {alertMessage}
-          {children}
         </p>
+        {children}
       </div>
     </div>
   );
